@@ -1,0 +1,64 @@
+Assignment 3
+
+Due: October 6, 11:59 PM
+
+Edit the Programs in such a way that your Main Class Name will be
+[FirstName_LastName_Problemno.] For all the problems below will take user input. You
+can use the Scanner class found in java.util package. Please add a line above each user
+input to guide the evaluator on the format of your input. Your outputs should be printed
+on your system console [command prompt or terminal].
+Total Points: 50
+Problem 1: 25 Points
+Design a Singly Linked List from scratch using Node class. Insert [use insertion method
+discussed in class] integers as data values between 1 to 100 in the Singly Linked List. Rotate the
+Linked List for K= N, where N is the number of elements in the Linked List.
+Example of Linked List Rotation:
+
+Your Program should contain the following:
+1. Insertion based on user input.
+2. Number of Rotations based on user input.
+3. Handle condition if try to rotate an empty Singly Linked List
+4. If the use wants to stop entering values in a Linked List, then the user needs to enter -1.
+5. Once the user enters -1, your program should print the rotated Singly Linked List on the
+console.
+6. Use Pointers to do the rotation Process. The program will be evaluated based on
+Space Complexity.
+
+Problem 2: [10+15] 25 Points
+Design a Singly Linked List from scratch using Node class. Initialize the head and tail pointer
+as null. Insert [use insertion method discussed in class] integers as data values between 1 to 100
+in the Singly Linked List. Reverse the Linked List.
+Example of Linked List Reversal:
+Tail
+Head
+
+Null
+
+Null
+
+Null
+
+2
+
+1
+
+1
+
+2
+
+Null
+
+Head
+Tail
+
+Your Program should contain the following:
+1. Insertion based on user input.
+2. Handle condition if try to reverse an empty Singly Linked List
+3. If the use wants to stop entering values in a Linked List, then the user needs to enter -1.
+4. Once the user enters -1, your program should print the reversed Singly Linked List on the console.
+5. Use Pointers to do the reversal Process. The program will be evaluated based on Space
+Complexity. 
+
+Implement the same for a Doubly Linked List.
+
+
