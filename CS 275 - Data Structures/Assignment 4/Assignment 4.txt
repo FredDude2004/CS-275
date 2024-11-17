@@ -1,0 +1,108 @@
+Assignment 4
+
+Write the Programs in such a way that your Main Class Name will be
+[FirstName_LastName_Problemno.] For all the problems below will take user input. You can use the
+Scanner class found in java.util package. Please add a line above each user input to guide the
+evaluator on the format of your input. Your outputs should be printed on your system console
+[command prompt or terminal].
+
+1.  Given the root of a binary tree and an integer targetSum, return true if the tree has
+    a root-to-leaf path such that adding up all the values along the path equals targetSum.
+
+    A leaf is a node with no children.
+
+    Example 1:
+
+              5
+             /\
+            4  8
+           /   /\
+          11  13 4
+         / \      \
+        7   2      1
+
+    User Input [using Java Scanner]: root = [5,4,8,11, null,13,4,7,2,null,null,null,1], targetSum = 22
+    Output: true
+    Explanation: The root-to-leaf path with the target sum is shown.
+
+    Example 2:
+
+         1
+        / \
+       2   3
+
+    User Input [using Java Scanner]: root = [1,2,3], targetSum = 5
+    Output: false
+    Explanation: There are two root-to-leaf paths in the tree:
+
+    (1 --> 2): The sum is 3.
+    (1 --> 3): The sum is 4.
+
+    There is no root-to-leaf path with sum = 5.
+
+    Example 3:
+
+    Input: root = [], targetSum = 0
+    Output: false
+    Explanation: Since the tree is empty, there are no root-to-leaf paths.
+
+
+
+    Constraints:
+        •   The number of nodes in the tree is in the range [0, 5000].
+        •   -1000 <= Node.val <= 1000
+        •   -1000 <= targetSum <= 1000
+
+
+
+2.  There is a bi-directional graph with n vertices, where each vertex is labeled from 0 to n -
+    1 (inclusive). The edges in the graph are represented as a 2D integer array edge, where
+    each edges[i] = [ui, vi] denotes a bi-directional edge between vertex ui and vertex vi. Every vertex
+    pair is connected by at most one edge, and no vertex has an edge to itself.
+
+    You want to determine if there is a valid path that exists from vertex source to vertex destination.
+    Given edges and the integers n, source, and destination, return true if there is a valid
+    path from source to destination, or false otherwise.
+
+
+
+    Example 1:
+
+       0---1
+        \ /
+         2
+
+    User Input [using Java Scanner]: n = 3, edges = [[0,1], [1,2],[2,0]], source = 0, destination = 2
+    Output: true
+    Explanation: There are two paths from vertex 0 to vertex 2:
+
+    -0→1→2
+    -0→2
+
+    Example 2:
+
+         1   3
+        /    | \
+       0     |  5
+        \    | /
+         2   4
+
+
+
+    User Input [using Java Scanner]: n = 6, edges = [0,1], [0,2], [3,5],[5,4],[4,3]], source = 0, destination
+    =5
+    Output: false
+
+    Explanation: There is no path from vertex 0 to vertex 5.
+
+
+    Constraints:
+
+    1 <= n <= 2 * 105
+    0 <= edges.length <= 2 * 105
+    edges[i].length == 2
+    0 <= ui, vi <= n - 1
+    ui! = vi
+    0 <= source, destination <= n - 1
+    There are no duplicate edges.
+    There are no self-edges.

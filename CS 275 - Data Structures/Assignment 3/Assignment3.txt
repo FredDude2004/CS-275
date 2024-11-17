@@ -1,0 +1,26 @@
+Assignment 3 [50 Points] Upload .java file with main class
+name as your firstname_lastname_problemno
+
+Design a Hashtable using positive integers [K < 1000] with
+hash function = K mod Hashtable[size] without using
+built-in Java functions, where K is key. Use a load factor of
+0.60 and implement rehashing, where every time the
+rehashed table will be twice the size of the previous hash
+table. [final table size no larger than 1000 slots].
+Please refer to this documentation for definitions of
+terms such as load factor.
+
+Use Scanner to get the following user inputs:
+1. Initial Hash Tablesize
+2. Insert keys one by one
+a. Remember the user can insert keys even after
+the hash table is rehashed
+
+Output :
+1. After each key insertion print the key and its
+corresponding value[index], the current hashtable
+and the current load factor.
+2. Once load factor > 0.60 print the rehashed table and
+prompt the user to enter more keys.
+3. The final rehashed table will not grow beyond 1000
+slots.
